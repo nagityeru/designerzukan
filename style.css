@@ -1,13 +1,11 @@
-
-
 @charset "UTF-8";
 
 html {
   font-size: 100%;
 }
 body {
-  margin: 0; 
-  padding: 0;
+  /* margin: 0;  */
+  /* padding: 0; */
   background-color: beige;
   color: dimgrey;
   font-size: 15px;
@@ -16,89 +14,94 @@ body {
 
 img {
   vertical-align: bottom;
+  width: 100%;
+  height: auto;
 }
 
-ul {
-  margin: 0px;
-  padding: 0;
+ul li {
+  /* margin: 0; */
+  /* padding: 0; */
+  list-style: none;
 }
 
 /*-------------------------------------------
 ヘッダー
 -------------------------------------------*/
-#header {
+header {
   width: 960px;
   height: 100px;
   margin: 0 auto;
   padding: 0 4%;
   background-color: #c7b299;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo  {
-    float: left;
-    margin-top: 50px;
-
+  /* float: left; */
+  /* margin-top: 50px; */
+  flex-basis: 50%;
 }
 
 .global-nav {
-    float: right;
-    margin-top: 60px;
+  /* float: right; */
+  /* margin-top: 60px; */
+  /* flex-basis: 50%; */
+  display: flex;
+  align-items: center;
 }
 
 .global-nav li  {
-    float: left;
-    margin: 0 20px;
-    font-size: 20px;
-    list-style: none;
+  /* float: left; */
+  /* list-style: none; */
+  margin: 0 20px;
+  font-size: 20px;
+  display: inline-block;
 }
 
 .global-nav li a {
-    color: olivedrab;
+  color: olivedrab;
 }
 
 .global-nav li a:hover{
-    border-bottom: 2px solid olivedrab;
-    padding-bottom: 3px;
-    text-decoration: none;
+  border-bottom: 2px solid olivedrab;
+  padding-bottom: 3px;
+  text-decoration: none;
 }
 
+/*アイコンサイズ*/
+.icon {
+  width: 40px;
+}
 
 .content  {
-    width: 960px;
-    margin: 0 auto;
+  width: 960px;
+  margin: 0 auto;
 }
-
+/* 
 #photograph .photograph-list li {
-    float: left;
-    list-style: none;
-    margin: 0 20px 15px 0;
+  float: left;
+  list-style: none;
+  margin: 0 20px 15px 0;
 }
 
 #photograph .photograph-list li:nth-child(3n){
-    margin: 0;
-}
-
-
-#wrap  {
-        clear: both;
-        background-color: lemonchiffon;
-        margin-top: 220px;
-        padding: 35px 0;
-
-}
-
-#main-center  {
-    width: 940px;
-    margin: 0 auto;
-
-}        
+  margin: 0;
+} */
 
 footer {
-    text-align: center;
-    color: olivedrab;
-    padding: 20px 0;
+  text-align: center;
+  color: olivedrab;
+  padding: 20px 0;
 }
 
 footer small  {
-    font-size: 12px;
+  font-size: 12px;
+}
+
+/*サムネイルのグリッド表示*/
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
