@@ -78,6 +78,21 @@ ul {
     margin: 0;
 }
 
+
+#wrap  {
+        clear: both;
+        background-color: lemonchiffon;
+        margin-top: 220px;
+        padding: 35px 0;
+
+}
+
+#main-center  {
+    width: 940px;
+    margin: 0 auto;
+
+}        
+
 footer {
     text-align: center;
     color: olivedrab;
