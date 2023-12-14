@@ -4,12 +4,16 @@ html {
   font-size: 100%;
 }
 body {
-  /* margin: 0;  */
-  /* padding: 0; */
-  background-color: beige;
+  background-color: #fff;
   color: dimgrey;
   font-size: 15px;
   line-height: 2;
+}
+
+h2  {
+     margin-top: 0;
+     margin-bottom:  20px;
+     line-height: 1.2;
 }
 
 img {
@@ -19,8 +23,6 @@ img {
 }
 
 ul li {
-  /* margin: 0; */
-  /* padding: 0; */
   list-style: none;
 }
 
@@ -28,7 +30,7 @@ ul li {
 ヘッダー
 -------------------------------------------*/
 header {
-  height: １３0px;
+  height: 130px;
   margin: 0 auto;
   padding: 0 4%;
   background-color: #c7b299;
@@ -74,20 +76,134 @@ header {
   width: 40px;
 }
 
+
+/*取材ページ*/
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
 .content  {
   width: 960px;
   margin: 0 auto;
 }
-/* 
-#photograph .photograph-list li {
-  float: left;
-  list-style: none;
-  margin: 0 20px 15px 0;
+
+
+.section-title {
+  font-size: 100px;
+  font-weight: normal;
+  margin-bottom: 4px;
 }
 
-#photograph .photograph-list li:nth-child(3n){
-  margin: 0;
-} */
+.section-title-en {
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+  
+  .content {
+    flex-direction: column;
+  }
+  .content .img {
+    width: 60%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  .content .text {
+    width: 100%;
+    padding: 0;
+  }
+
+
+/*取材フォーム*/
+.heading-section  {
+       align-items: center;
+}
+
+/*お問い合わせのところ*/
+.cp_h1title {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	padding: 0 17%;
+	text-align: center;
+    font-size: 30px;
+	color:#00acc1;
+}
+.cp_h1title::before,
+.cp_h1title::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	display: inline-block;
+	width: 15%;
+	height: 3px;
+	border-top: 3px solid #00acc1;
+}
+.cp_h1title::before {
+	left: 80px;
+}
+.cp_h1title::after {
+	right: 80px;
+}
+
+
+/*フォームの項目部分*/
+.form-group{
+    display: grid;
+    margin-bottom:  10px;
+    padding: 10px 0;
+    grid-template-columns: 300px 1fr;
+    padding: 40px;
+
+}
+.form-label  {
+    padding-top: 8px;
+    font-size: 18px;
+    color: olivedrab;
+}
+
+.form-btn  {
+     margin: 30px 0;
+     text-align: center;
+
+}
+
+/*フォームの入力欄*/
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid olivedrab;
+}
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus{
+    outline: none;
+}
+
+/*送信ボタン*/
+button[type="submit"] {
+  width: 170px;
+  height: 40px;
+  color: #c7b299;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid olivedrab;
+}
+
+/*送信ボタンにマウスポインタを重ねたとき*/
+button[type="submit"]:hover {
+    color: #fff;
+    background: lightpink;
+}
+
+/*フッター*/
 
 footer {
   text-align: center;
