@@ -16,6 +16,15 @@ h2  {
      line-height: 1.2;
 }
 
+
+h3  {
+    margin-top: 0;
+     margin-bottom:  20px;
+     line-height: 1.2;
+     color: #006837;
+
+}
+     
 img {
   vertical-align: bottom;
   width: 100%;
@@ -40,23 +49,18 @@ header {
 }
 
 .logo  {
-  /* float: left; */
-  /* margin-top: 50px; */
   flex-basis: 50%;
 }
 
 .global-nav {
-  /* float: right; */
-  /* margin-top: 60px; */
-  /* flex-basis: 50%; */
+
   display: flex;
   align-items: center;
 }
 
 .global-nav li  {
-  /* float: left; */
-  /* list-style: none; */
-  margin: 0 20px;
+ 
+ margin: 0 20px;
   font-size: 20px;
   display: inline-block;
 }
@@ -78,43 +82,60 @@ header {
 
 
 /*取材ページ*/
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 18px;
-}
-
-.content  {
-  width: 960px;
-  margin: 0 auto;
-}
-
-
 .section-title {
-  font-size: 100px;
-  font-weight: normal;
+  font-size: 45px;
+  font-weight: 30px;
   margin-bottom: 4px;
 }
-
+/*
+spanタグを使用しているため、「display: inline-block;」を設定することで、
+改行されてmargin-bottomが使用できるようになる
+※pタグを使用してもよいが、文章ではないため今回はspanタグを選択
+*/
 .section-title-en {
   display: inline-block;
   margin-bottom: 25px;
 }
 
+
+/*-------------------------------------------
+Concept、Work
+-------------------------------------------*/
+.content {
+  display: flex;
+  margin-bottom: 60px;
+  margin-left: 250px;
+  margin-right: 250px;
   
+}
+.content .img {
+  width: 100px;
+  height: auto;
+}
+.content .text {
+  width: 50%;
+  padding: 0 7%;
+
+}
+
   .content {
     flex-direction: column;
   }
+
   .content .img {
-    width: 60%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width: 250px;
+    margin-top: 40px;
+    margin-bottom: 10px;
     align-items: center;
+  
   }
   .content .text {
     width: 100%;
     padding: 0;
+    
   }
+
+
 
 
 /*取材フォーム*/
@@ -130,7 +151,7 @@ header {
 	padding: 0 17%;
 	text-align: center;
     font-size: 30px;
-	color:#00acc1;
+	color:　#006837;
 }
 .cp_h1title::before,
 .cp_h1title::after {
@@ -140,7 +161,7 @@ header {
 	display: inline-block;
 	width: 15%;
 	height: 3px;
-	border-top: 3px solid #00acc1;
+	border-top: 3px solid #006837;
 }
 .cp_h1title::before {
 	left: 80px;
